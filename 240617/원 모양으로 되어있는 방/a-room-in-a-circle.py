@@ -14,6 +14,6 @@ for i in range(n):
         cnt = (j+n-i)%n #원의 인덱스 표현 방법 참고
         dist += cnt * room[j]
 
-    ans = min(ans,dist)
+        ans = min(ans,dist)
 
 print(ans)
