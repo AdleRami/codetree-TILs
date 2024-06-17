@@ -11,6 +11,6 @@ for i in range(n):
     for j in range(i+2, n):
         sum_min = arr[i]+arr[j]
     
-    ans = max(ans,sum_min)
+        ans = max(ans,sum_min)
 
 print(ans)
