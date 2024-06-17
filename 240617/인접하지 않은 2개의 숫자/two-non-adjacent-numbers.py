@@ -9,8 +9,7 @@ ans = INT_MIN
 for i in range(n):
     sum_min = 0
     for j in range(i+2, n):
-        sum_min = arr[i]+arr[j]
-    
+        sum_min = arr[i]+arr[j]    
         ans = max(ans,sum_min)
 
 print(ans)
