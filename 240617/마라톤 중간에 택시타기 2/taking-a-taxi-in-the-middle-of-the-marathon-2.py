@@ -5,12 +5,12 @@ INT_MAX = sys.maxsize
 n = int(input())
 check_point = [list(map(int,input().split())) for _ in range(n)]
 
-prev_idx = 0
-dist = 0
 min_dist = INT_MAX
 
 #i번째 정류장 건너뛰기
 for i in range(1,n -1):
+    prev_idx = 0
+    dist = 0
     for j in range(1,n):
         if i == j :
             continue
