@@ -6,7 +6,7 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 ans = INT_MIN
-for i in range(n-2):
+for i in range(n):
     sum_min = 0
     for j in range(i+2, n):
         sum_min = arr[i]+arr[j]
