@@ -17,7 +17,7 @@ def adjacent_cnt(x,y):
 ans = 0
 for i in range(n):
     for j in range(n):
-        if adjacent_cnt >=3:
+        if adjacent_cnt(i,j) >=3:
             ans+=1
 
 print(ans)
