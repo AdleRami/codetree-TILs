@@ -11,7 +11,7 @@ def in_range(x,y):
 x,y = 0,0
 for i in range(ord('B')-ord('A'), ord('B')-ord('A') + n*m-1):
     nx,ny = x + dx[dir_num],y +dy[dir_num]
-    order = i % 25
+    order = i % 26
     if not in_range(nx,ny) or arr[nx][ny] != 0:
         dir_num = (dir_num + 1) % 4
     
