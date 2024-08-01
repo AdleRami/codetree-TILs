@@ -6,7 +6,7 @@ arr[0][0] = 1
 dir_num = 0
 
 def in_range(x,y):
-    return 0<=x<m and 0<=y<n
+    return 0<=x<n and 0<=y<m
 
 x,y = 0,0
 for i in range(2,n*m+1):
