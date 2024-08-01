@@ -19,6 +19,5 @@ for i in move:
         if nx==0 and ny ==0:
             print(cnt)
             exit()
-            
-if nx==0 and ny ==0:
-    print(-1)
+
+print(-1)
