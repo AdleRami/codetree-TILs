@@ -1,12 +1,10 @@
 #객체 선언
 class status:
     def __init__(self, user_id="", level=0):
-        status.user_id = user_id
-        status.level = level
+        self.user_id = user_id
+        self.level = level
 
-status1 = status()
-status1.user_id = 'codetree'
-status1.level = 10
+status1 = status('codetree',10)
 status2 = status()
 new_id, new_level = tuple(input().split())
 
