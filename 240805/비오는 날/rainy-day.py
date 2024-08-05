@@ -13,11 +13,13 @@ for i in range(n):
     date, day, weather = tuple(input().split())
     weather_list.append(weather_forcast(date, day, weather))
 
+#날짜 순으로 정렬하기
+sorted_weather_list = sorted(weather_list, key = lambda x: x.date)
 #처음으로 비내리는 날 찾기
 rain_idx = 0
 for i in range(n):
-    if weather_list[i].weather == 'Rain':
+    if sorted_weather_list[i].weather == 'Rain':
         rain_idx = i
         break
 
-print(weather_list[i].date, weather_list[i].day, weather_list[i].weather)
+print(sorted_weather_list[i].date, sorted_weather_list[i].day, sorted_weather_list[i].weather)
