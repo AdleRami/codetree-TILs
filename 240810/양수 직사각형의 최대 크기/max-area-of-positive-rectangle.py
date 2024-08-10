@@ -28,4 +28,7 @@ for x1 in range(n):
             for y2 in range(y1,m):
                 ans = max(ans, check_positive_rect(x1, y1, x2, y2))
 
-print(ans)
+if ans == 0:
+    print(-1)
+else:
+    print(ans)
